@@ -5,7 +5,7 @@ A simple HTML5 app (optimized for Chrome) to manage your todo.txt file.
 Design was created by [Reed Fulghum](https://github.com/ReedFulghum) and inspired
 by [Sublime Text](http://www.sublimetext.com/).
 
-todo.txt-html5 uses [Gina Tripani's](https://github.com/ginatrapani) todo.txt
+todo.txt-html5 uses [Gina Trapani's](https://github.com/ginatrapani) todo.txt
 format, popularized with [todo.txt-cli](https://github.com/ginatrapani/todo.txt-cli).
 
 This application is licensed under the [GNU Affero General Public License v3](
