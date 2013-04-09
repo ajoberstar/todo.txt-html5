@@ -135,5 +135,16 @@ var controller = {
 	saveTodosToLocal: function() {
 		writeTodoFile(this._files.todo, renderTodos(this.getFilteredTodos({complete:false})))
 		writeTodoFile(this._files.done, renderTodos(this.getFilteredTodos({complete:true})))
+	},
+
+	saveTodosToDropbox: function() {
+		dropbox_save_todo(renderTodos(this.getFilteredTodos({complete:false})));
+		dropbox_save_done(renderTodos(this.getFilteredTodos({complete:true})));
+	},
+
+	saveTodos: function() {
+		this.saveTodosToDropbox();
+		this.saveTodosToLocal();
 	}
+
 }

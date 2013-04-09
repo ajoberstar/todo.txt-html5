@@ -39,7 +39,7 @@ $('.todo-save').live('click', function(event) {
 		description: description
 	})
 	controller.sortTodos()
-	controller.saveTodosToLocal()
+	controller.saveTodos()
 	event.preventDefault()
 })
 
@@ -54,7 +54,7 @@ $('.todo-add').live('click', function(event) {
 	todoElem.children('input').attr('value', '')
 	todoElem.children('.todo-priority').focus()
 	controller.sortTodos()
-	controller.saveTodosToLocal()
+	controller.saveTodos()
 	event.preventDefault()
 })
 

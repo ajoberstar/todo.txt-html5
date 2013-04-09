@@ -58,6 +58,7 @@ var html = {
 				controller.updateTodo(todo.id, { complete: !todo.complete })
 				controller.sortTodos()
 				controller.saveTodosToLocal()
+				controller.saveTodosToDropbox()
 			})
 		}
 	}
